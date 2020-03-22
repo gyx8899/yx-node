@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/gyx8899/npm-template.git"
   },
+  "keywords": ["template", "package", "commonjs", "umd", "esm"],
   "author": "Kate Kuo",
   "license": "MIT",
   "devDependencies": {
