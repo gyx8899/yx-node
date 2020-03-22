@@ -1,7 +1,7 @@
 {
-  "name": "@Kate/npm-template",
-  "version": "0.1.2",
-  "description": "npm package template",
+  "name": "@kate/npm-template",
+  "version": "0.1.0",
+  "description": "Template for npm package",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
