@@ -1,5 +1,5 @@
 {
-  "name": "@kate/npm-template",
+  "name": "@daybyday/npm-template",
   "version": "0.1.0",
   "description": "Template for npm package",
   "main": "dist/cjs/index.js",
