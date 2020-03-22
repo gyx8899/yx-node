@@ -1,5 +1,6 @@
 #!/bin/bash
 
+npm config set access public
 npm run prepack
 if [ $? = 0 ]; then
     echo
