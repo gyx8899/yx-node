@@ -7,7 +7,7 @@
   "scripts": {
     "prepack": "npm run lint && npm run test && npm run build",
     "build": "rollup -c",
-    "server": "cd ./dev_site && node run.js",
+    "server": "cd ./app && node webpack.config.js",
     "lint": "eslint src/**/*.js",
     "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
   },
@@ -15,7 +15,13 @@
     "type": "git",
     "url": "https://github.com/gyx8899/npm-template.git"
   },
-  "keywords": ["template", "package", "commonjs", "umd", "esm"],
+  "keywords": [
+    "template",
+    "package",
+    "commonjs",
+    "umd",
+    "esm"
+  ],
   "author": "Kate Kuo",
   "license": "MIT",
   "devDependencies": {
@@ -72,9 +78,7 @@
     "url-loader": "^3.0.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
-  },
-  "dependencies": {
+    "webpack-dev-server": "^3.10.1",
     "@babel/polyfill": "^7.8.3",
     "bootstrap": "^4.4.1",
     "classnames": "^2.2.6",
