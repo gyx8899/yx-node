@@ -1,7 +1,7 @@
 {
-  "name": "@daybyday/npm-template",
-  "version": "0.1.1",
-  "description": "Template for npm package",
+  "name": "@daybyday/yx-node",
+  "version": "0.1.0",
+  "description": "YX-Node: A collection of common node functions.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gyx8899/npm-template.git"
+    "url": "https://github.com/gyx8899/yx-node.git"
   },
   "keywords": [
-    "template",
-    "package",
+    "node",
+    "yx",
     "commonjs",
     "umd",
     "esm"

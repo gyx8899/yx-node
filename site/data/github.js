@@ -1,4 +1,4 @@
 export default {
-	name: 'npm-template',
-	href: 'https://github.com/gyx8899/npm-template',
+	name: 'yx-node',
+	href: 'https://github.com/gyx8899/yx-node',
 }

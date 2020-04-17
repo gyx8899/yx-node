@@ -1,5 +1,5 @@
-# npm template
-NPM package project template
+# YX Node
+YX-Node: A collection of common node functions.
 
 ## Publish steps
 
@@ -19,10 +19,10 @@ npm publish
 
 ## Install
 ```cmd
-npm install @daybyday/xxx --save
+npm install @daybyday/yx-node --save
 ```
 
 ## Importing
 ```jsx
-import xxx from '@daybyday/xxx';
+import xxx from '@daybyday/yx-node';
 ```

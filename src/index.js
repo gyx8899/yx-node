@@ -1,11 +1,11 @@
-class NPM {
-  constructor() {
-    this.name = 'NPM';
-  }
+const file = require('./File');
+const directory = require('./Directory');
+const params = require('./Prams');
+const utils = require('./Utils');
 
-  toString() {
-    return this.name;
-  }
-}
-
-export default NPM;
+module.exports = {
+  file,
+  directory,
+  params,
+  utils,
+};
