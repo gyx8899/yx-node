@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/gyx8899/yx-node/compare/v0.1.3...v0.1.4) (2020-04-17)
+
+
+### Bug Fixes
+
+* **package:** Add dependency of [@babel-runtime](https://github.com/babel-runtime) ([ea5b1ce](https://github.com/gyx8899/yx-node/commit/ea5b1ce8a9db7b89f39b3bc922f465b2ace662fe))
+
+
+
 ## [0.1.3](https://github.com/gyx8899/yx-node/compare/v0.1.2...v0.1.3) (2020-04-17)
 
 
