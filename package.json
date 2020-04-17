@@ -107,5 +107,8 @@
     "browsers": [
       "last 2 Explorer versions"
     ]
+  },
+  "dependencies": {
+    "babel-helpers": "^6.24.1"
   }
 }
