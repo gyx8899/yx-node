@@ -109,6 +109,7 @@
     ]
   },
   "dependencies": {
+    "@babel/runtime": "^7.9.2",
     "babel-helpers": "^6.24.1"
   }
 }
