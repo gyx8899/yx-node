@@ -9,7 +9,7 @@
     "build": "rollup -c",
     "start": "node webpack.config.js",
     "lint": "eslint src/**/*.js",
-    "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests --coverage"
   },
   "repository": {
     "type": "git",
@@ -100,8 +100,7 @@
     ],
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!(@babel))"
-    ],
-    "passWithNoTests": true
+    ]
   },
   "browserslist": {
     "browsers": [
