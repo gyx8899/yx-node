@@ -26,6 +26,7 @@ function iterateObject(obj, level, callbackNonLeaf, callbackLeaf) {
     }
   }
 }
+exports.iterateObject = iterateObject;
 
 // Params
 function getNodeArgs() {
@@ -49,6 +50,7 @@ function getNodeArgs() {
       });
   return args;
 }
+exports.getNodeArgs = getNodeArgs;
 
 function getParam(array, param) {
   let paramValue = '';
@@ -61,6 +63,7 @@ function getParam(array, param) {
   }
   return paramValue;
 }
+exports.getParam = getParam;
 
 // Files
 function writeDataToFile(fileDirName, data) {
@@ -69,11 +72,13 @@ function writeDataToFile(fileDirName, data) {
     console.log(`${fileDirName}: ${err ? 'Write File failed!' : 'Saved successfully!'}`);
   });
 }
+exports.writeDataToFile = writeDataToFile;
 
 function readDataFromFile(fileDirname) {
   return fs.readFileSync(fileDirname)
       .toString();
 }
+exports.readDataFromFile = readDataFromFile;
 
 function getFileStats(fileDirName) {
   return fs.statSync(fileDirName);
@@ -94,10 +99,12 @@ function getFileStats(fileDirName) {
 // stat.isFile()
 // stat.isDirectory()
 }
+exports.getFileStats = getFileStats;
 
 function getNameFromFileName(fileName) {
   return fileName.slice(0, fileName.lastIndexOf('.'));
 }
+exports.getNameFromFileName = getNameFromFileName;
 
 // Directory
 function getDirectoryList(directory) {
@@ -116,14 +123,17 @@ function getDirectoryList(directory) {
       });
   return dirContent;
 }
+exports.getDirectoryList = getDirectoryList;
 
 function getDirectoryFileNames(dirPath) {
   return getDirectoryList(dirPath).fileNames;
 }
+exports.getDirectoryFileNames = getDirectoryFileNames;
 
 function getDirectoryFolderNames(dirPath) {
   return getDirectoryList(dirPath).dirNames;
 }
+exports.getDirectoryFolderNames = getDirectoryFolderNames;
 
 function getDiffFolderFileNames(sourceFolder, destFolder) {
   const sourceFileNames = getDirectoryFileNames(sourceFolder);
@@ -140,6 +150,7 @@ function getDiffFolderFileNames(sourceFolder, destFolder) {
   }
   return resultFileNames;
 }
+exports.getDiffFolderFileNames = getDiffFolderFileNames;
 
 function readDirectory(fileDir, fileCallback, folderCallback) {
   fs.stat(fileDir, (error, stats) => {
@@ -159,6 +170,7 @@ function readDirectory(fileDir, fileCallback, folderCallback) {
     }
   });
 }
+exports.readDirectory = readDirectory;
 
 function getFileFromDirectory(filePath, fileCallback, folderCallback) {
   // 根据文件路径读取文件，返回文件列表
@@ -177,9 +189,10 @@ function getFileFromDirectory(filePath, fileCallback, folderCallback) {
     }
   });
 }
+exports.getFileFromDirectory = getFileFromDirectory;
 
 // Webpack
-const setMPA = (entryDir = './src/*/index.js', entryRegexp = /src\/(.*)\/index\.js/) => {
+exports.setMPA = (entryDir = './src/*/index.js', entryRegexp = /src\/(.*)\/index\.js/) => {
   const entry = {};
   const htmlWebpackPlugins = [];
   const entryFiles = glob.sync(path.join(__dirname, entryDir));
@@ -215,30 +228,4 @@ const setMPA = (entryDir = './src/*/index.js', entryRegexp = /src\/(.*)\/index\.
     entry,
     htmlWebpackPlugins,
   };
-};
-
-module.exports = {
-  // Utils
-  iterateObject,
-
-  // Params
-  getNodeArgs,
-  getParam,
-
-  // Files
-  writeDataToFile,
-  readDataFromFile,
-  getFileStats,
-  getNameFromFileName,
-
-  // Directory
-  getDirectoryList,
-  getDirectoryFileNames,
-  getDirectoryFolderNames,
-  getDiffFolderFileNames,
-  getFileFromDirectory,
-  readDirectory,
-
-  // Webpack
-  setMPA,
 };
