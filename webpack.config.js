@@ -2,7 +2,9 @@ const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const port = 3020;
+const {webpackTool} = require('./src/index');
+
+const port = webpackTool.checkServerPort(3020);
 
 new WebpackDevServer(webpack({
 	devtool: 'cheap-module-source-map',
