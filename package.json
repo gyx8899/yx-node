@@ -109,8 +109,6 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "babel-helpers": "^6.24.1",
-    "glob": "^7.1.6",
-    "html-webpack-plugin": "^4.2.1"
+    "babel-helpers": "^6.24.1"
   }
 }
