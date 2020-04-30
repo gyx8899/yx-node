@@ -1,3 +1,13 @@
+## [0.1.5](https://github.com/gyx8899/yx-node/compare/v0.1.4...v0.1.5) (2020-04-30)
+
+
+### Bug Fixes
+
+* **index:** Download compatibility for already using cases; ([c9d8c9f](https://github.com/gyx8899/yx-node/commit/c9d8c9f87bdea7933b7abf39c4add05c71f60701))
+* **package:** Remove unkonwn passWithNoTests config ([eacb860](https://github.com/gyx8899/yx-node/commit/eacb860da4fdfce59883b282f98df4b707e92a51))
+
+
+
 ## [0.1.4](https://github.com/gyx8899/yx-node/compare/v0.1.3...v0.1.4) (2020-04-17)
 
 
