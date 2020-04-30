@@ -1,3 +1,13 @@
+## [0.1.6](https://github.com/gyx8899/yx-node/compare/v0.1.5...v0.1.6) (2020-04-30)
+
+
+### Bug Fixes
+
+* **index:** Reset with all functions in index file ([aa8ffd2](https://github.com/gyx8899/yx-node/commit/aa8ffd28d090afb6ad97868a2d58c2b36873b63c))
+* **package:** Remove unkonwn passWithNoTests param config ([41d0ea8](https://github.com/gyx8899/yx-node/commit/41d0ea81da41d8ba07935183e3ffbc3525ff467f))
+
+
+
 ## [0.1.5](https://github.com/gyx8899/yx-node/compare/v0.1.4...v0.1.5) (2020-04-30)
 
 
