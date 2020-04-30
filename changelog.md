@@ -1,3 +1,13 @@
+## [0.1.7](https://github.com/gyx8899/yx-node/compare/v0.1.6...v0.1.7) (2020-04-30)
+
+
+### Bug Fixes
+
+* **index:** Move require('net') ([9c7a087](https://github.com/gyx8899/yx-node/commit/9c7a087e6373e9cd89f6562f5f025aba78923a1d))
+* **index:** Revert webpack functions ([2b05d15](https://github.com/gyx8899/yx-node/commit/2b05d159dadc44c47ac92c5ce5601c42dacaa406))
+
+
+
 ## [0.1.6](https://github.com/gyx8899/yx-node/compare/v0.1.5...v0.1.6) (2020-04-30)
 
 
