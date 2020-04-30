@@ -9,7 +9,8 @@
     "build": "rollup -c",
     "start": "node webpack.config.js",
     "lint": "eslint src/**/*.js",
-    "test": "cross-env BABEL_ENV=test jest --passWithNoTests"
+    "test": "cross-env BABEL_ENV=test jest --passWithNoTests",
+    "publish": "publish.sh"
   },
   "repository": {
     "type": "git",
