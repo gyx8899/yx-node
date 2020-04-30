@@ -1,8 +1,8 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
+/* eslint-disable */
+const net = require('net');
 const glob = require('glob');
-// eslint-disable-next-line import/no-extraneous-dependencies
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// Webpack
+
 const setMPA = (entryDir = './src/*/index.js', entryRegexp = /src\/(.*)\/index\.js/) => {
   const entry = {};
   const htmlWebpackPlugins = [];
