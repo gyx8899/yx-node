@@ -100,8 +100,7 @@
     ],
     "transformIgnorePatterns": [
       "<rootDir>/node_modules/(?!(@babel))"
-    ],
-    "passWithNoTests": true
+    ]
   },
   "browserslist": {
     "browsers": [
