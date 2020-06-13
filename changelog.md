@@ -1,3 +1,12 @@
+# [1.0.0](https://github.com/gyx8899/yx-node/compare/v0.1.7...v1.0.0) (2020-06-13)
+
+
+### Bug Fixes
+
+* **.next:** Remove .next folder form git; ([88e89f0](https://github.com/gyx8899/yx-node/commit/88e89f0c81e74dd26944fd3b3d70d1bea85de8f9))
+
+
+
 ## [0.1.7](https://github.com/gyx8899/yx-node/compare/v0.1.6...v0.1.7) (2020-04-30)
 
 
@@ -47,11 +56,7 @@
 
 
 
-## [0.1.2](https://github.com/gyx8899/yx-node/compare/v0.1.1...v0.1.2) (2020-04-17)
-
-
-
-## 0.1.1 (2020-04-17)
+## 0.1.2 (2020-04-17)
 
 
 
