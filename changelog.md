@@ -1,3 +1,7 @@
+## [1.0.1](https://github.com/gyx8899/yx-node/compare/v1.0.0...v1.0.1) (2020-06-14)
+
+
+
 # [1.0.0](https://github.com/gyx8899/yx-node/compare/v0.1.7...v1.0.0) (2020-06-13)
 
 
