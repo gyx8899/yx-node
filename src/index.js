@@ -103,11 +103,10 @@ function getDirectoryList(directory) {
   };
   fs.readdirSync(directory)
       .forEach((dirItem) => {
-        if (fs.statSync(`${directory}/${dirItem}`)
-            .isDirectory()) {
-          dirContent.dirNames[dirContent.dirNames.length] = dirItem;
+        if (fs.statSync(`${directory}/${dirItem}`).isDirectory()) {
+          dirContent.dirNames.push(dirItem);
         } else {
-          dirContent.fileNames[dirContent.fileNames.length] = dirItem;
+          dirContent.fileNames.push(dirItem);
         }
       });
   return dirContent;
@@ -173,6 +172,30 @@ function getFileFromDirectory(filePath, fileCallback, folderCallback) {
     }
   });
 }
+
+const walk = function (dir, done) {
+  let results = [];
+  fs.readdir(dir, function (err, list) {
+    if (err) return done(err);
+    let i = 0;
+    (function next() {
+      const file = list[i++];
+      if (!file) return done(null, results);
+      file = path.resolve(dir, file);
+      fs.stat(file, function (err, stat) {
+        if (stat && stat.isDirectory()) {
+          walk(file, function (err, res) {
+            results = results.concat(res);
+            next();
+          });
+        } else {
+          results.push(file);
+          next();
+        }
+      });
+    }());
+  });
+};
 
 module.exports = {
   // Utils
